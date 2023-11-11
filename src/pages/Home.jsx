@@ -8,13 +8,25 @@ import Sidebar from '../components/Sidebar';
 
 const Home = () => {
   return (
-    <>  
-        <Navbar />
-        <Sidebar />
-        <BasicPie />
-        <BasicBars />
-        <SimpleLineChart />
-        <BarsDataset />
+    <>
+      <Navbar />
+      <main style={{display:'flex',flexWrap:'wrap',flex:'1 1 600px',width:'100%',margin:'0 auto',justifyContent:'space-around',paddingTop:'1rem'}}>
+        {/* <div style={{border:'1px solid red'}}>
+          <Sidebar />
+        </div> */}
+        <div>
+          <BasicPie />
+        </div>
+        <div>
+          <BasicBars />
+        </div>
+        <div>
+          <SimpleLineChart />
+        </div>
+        <div>
+          <BarsDataset />
+        </div>
+      </main>
     </>
   )
 }
